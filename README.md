@@ -69,8 +69,6 @@ Get your keys:
 streamlit run app.py
 ```
 
-App opens at `http://localhost:8501`
-
 ---
 
 ## 🚀 Deploy to Railway
