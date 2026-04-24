@@ -3,6 +3,8 @@
 
 A fully deployed AI agent system that conducts real-time mock interviews using 3 specialized agents — built for Semester IV B.E. ECE End-Semester Project.
 
+**[🚀 Live App on Railway](https://ai-interview-coach-production-c5bc.up.railway.app)** | **[📹 Watch Loom Demo](https://www.loom.com/share/acc38469f34e4410a15f46ee41075ce3)**
+
 ---
 
 ## 🤖 The 3 Agents
