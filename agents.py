@@ -70,7 +70,7 @@ Make questions specific, realistic and relevant to {company}'s known interview s
 
     response = _call_with_retry(
         client,
-        model="gemini-1.5-flash",
+        model="gemini-3.1-flash-lite-preview",
         contents=[types.Content(role="user", parts=[types.Part.from_text(text=prompt)])],
         config=types.GenerateContentConfig(
             system_instruction="You are an expert interview research analyst. Always return valid JSON only, no markdown, no backticks."
@@ -181,7 +181,7 @@ If this is question 9 or 10, set is_interview_complete to true and wrap up natur
 
     response = _call_with_retry(
         client,
-        model="gemini-1.5-flash",
+        model="gemini-3.1-flash-lite-preview",
         contents=[
             *[types.Content(role="model" if m["role"] == "interviewer" else "user", parts=[types.Part.from_text(text=m["content"])]) for m in conversation_history[-4:]],
             types.Content(role="user", parts=[types.Part.from_text(text=prompt)])
@@ -273,7 +273,7 @@ Score out of 10. Be specific and actionable."""
 
     response = _call_with_retry(
         client,
-        model="gemini-1.5-flash",
+        model="gemini-3.1-flash-lite-preview",
         contents=[types.Content(role="user", parts=[types.Part.from_text(text=prompt)])],
         config=types.GenerateContentConfig(
             system_instruction="You are a strict but fair interview coach. Return only valid JSON, no markdown."
